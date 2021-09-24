@@ -1,0 +1,3 @@
+List<Account> accList = [SELECT name FROM Account];
+
+System.debug(accList);

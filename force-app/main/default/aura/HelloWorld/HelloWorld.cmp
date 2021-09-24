@@ -1,5 +1,7 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" >
-    <lightning:card footer="Hello World Fotter" title="Hello">
+    <aura:attribute name="greet" type="String" default="Hello World"/>
+
+    <lightning:card footer="Hello World Fotter" title="{! v.greet+v.greet+v.greet}">
         <aura:set attribute="actions">
             <!-- <lightning:button label="New"/> -->
         </aura:set>
