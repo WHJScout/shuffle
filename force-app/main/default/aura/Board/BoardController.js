@@ -51,7 +51,7 @@
     },
 
     reshuffleBoard: function (component, event, helper) {
-        console.log(444);
+        // console.log(444);
         let words = component.get("v.words");
         words = helper.randomizeArray(words);
         component.set("v.words",words);

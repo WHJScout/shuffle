@@ -25,13 +25,13 @@
     onResultHandler: function(component, event,helper) {
         var result = event.getParam("result");
         if(result === "win"){
-            console.log("win here");
+            // console.log("win here");
             component.set("v.reshuffleDisabled",true);
-             helper.helperMethod();
+             helper.helperMethod(component,result);
         }else if(result === "lose"){
-            console.log("lose here");
+            // console.log("lose here");
             component.set("v.reshuffleDisabled",false);
-             helper.helperMethod();
+             helper.helperMethod(component,result);
         }
     },
 })
