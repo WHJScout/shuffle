@@ -40,7 +40,7 @@
             helper.fireResultEvent("lose");
         }
 
-         console.log("clickCount :" + clickCount);
+        //  console.log("clickCount :" + clickCount);
         component.set("v.clickCount", clickCount);
 
   

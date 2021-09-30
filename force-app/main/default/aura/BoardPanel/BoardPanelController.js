@@ -9,7 +9,7 @@
             let childCmp = component.find("boardComp");
             childCmp.startGame();
         }
-        helper.helperMethod();
+        // helper.helperMethod();
         // console.log(selectValue);
         // alert('start game');
         
@@ -22,17 +22,16 @@
 
     },
     
-    onResultHandler: function(component, event) {
-        console(123);
-        helper.helperMethod();
-        console(456);
+    onResultHandler: function(component, event,helper) {
         var result = event.getParam("result");
         if(result === "win"){
             console.log("win here");
             component.set("v.reshuffleDisabled",true);
+             helper.helperMethod();
         }else if(result === "lose"){
             console.log("lose here");
             component.set("v.reshuffleDisabled",false);
+             helper.helperMethod();
         }
     },
 })
