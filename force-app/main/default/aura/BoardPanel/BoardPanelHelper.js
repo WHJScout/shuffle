@@ -36,12 +36,14 @@
         if(message === "success"){
             toastEvent.setParams({
                 "title": "Success!",
-                "message": "The record has been updated successfully."
+                "message": "The record has been updated successfully.",
+                "type":"success",
             });
         }else{
             toastEvent.setParams({
                 "title": "Lose!",
-                "message": "The record has been updated Failer."
+                "message": "The record has been updated Failer.",
+                "type":"error",
             });
         }
  
