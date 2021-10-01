@@ -7,6 +7,7 @@
     <aura:attribute name="slectedMode" type="String" />
     <aura:attribute name="reshuffleDisabled" type="Boolean" default="true"/>
 
+    <aura:registerEvent name="appEvent" type="c:NotifyGameResultUpdate"/>
     <aura:handler event="c:ResultApplicationEvent" action="{!c.onResultHandler}"/>
 
     <lightning:card title="Word Shuddle">

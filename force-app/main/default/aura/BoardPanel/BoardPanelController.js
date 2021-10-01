@@ -27,11 +27,15 @@
         if(result === "win"){
             // console.log("win here");
             component.set("v.reshuffleDisabled",true);
-             helper.helperMethod(component,result);
+             helper.helperMethod(component,event,result);
+
+             //if win show toast 
+             helper.showToast(component, event,helper,"success");
         }else if(result === "lose"){
             // console.log("lose here");
             component.set("v.reshuffleDisabled",false);
-             helper.helperMethod(component,result);
+             helper.helperMethod(component,event,result);
+             helper.showToast(component, event,helper,"lose");
         }
     },
 })
