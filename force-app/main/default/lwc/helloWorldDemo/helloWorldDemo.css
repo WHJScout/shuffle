@@ -1,7 +1,7 @@
-.hello-world {
+.hello{
     background: red;
 }
 
-.slds-page-header.flexipageHeader { 
-    display: none;
+:host {
+    background: green;
 }
